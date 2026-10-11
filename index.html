@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f5f0">
+    <meta name="description" content="HerdHub Sheep — calm, practical flock care for every day in the field.">
+    <title>HerdHub Sheep — Field-ready flock care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="prototype">
+      <aside class="showcase">
+        <a class="brand" href="#" aria-label="HerdHub Sheep home">
+          <span class="brand-mark"><span></span><span></span><span></span></span>
+          <span><strong>HerdHub</strong><small>SHEEP · FIELD READY</small></span>
+        </a>
+        <p class="showcase-label">PRODUCT PREVIEW</p>
+        <h1>Good care.<br><em>Made simple.</em></h1>
+        <p class="showcase-copy">A calm, practical home for every sheep, group, and daily task on your farm.</p>
+        <div class="showcase-controls">
+          <label class="control-label" for="mode-select">DISPLAY MODE</label>
+          <select id="mode-select" aria-label="Display mode">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="sun">Sun mode</option>
+            <option value="field">Field mode</option>
+          </select>
+          <button class="locale-button" id="locale-toggle" type="button">العربية <span>↗</span></button>
+        </div>
+        <div class="screen-index">
+          <p class="control-label">EXPLORE THE APP</p>
+          <div class="screen-links" id="screen-links"></div>
+        </div>
+        <div class="showcase-foot"><span class="foot-dot"></span> Works offline, right where you are.</div>
+      </aside>
+
+      <main class="stage">
+        <div class="stage-top">
+          <div><span class="stage-eyebrow">HERDHUB SHEEP</span><span class="stage-title">Field app concept</span></div>
+          <div class="stage-badges"><span class="badge badge-offline"><i></i> Offline ready</span><span class="badge">EN / AR</span></div>
+        </div>
+        <div class="device-wrap">
+          <div class="device">
+            <div class="phone-screen" id="phone-screen">
+              <div class="status-bar"><span>9:41</span><span class="status-icons"><span>●●●</span><span>◖</span><span class="battery"><i></i></span></span></div>
+              <div id="app-view"></div>
+              <nav class="bottom-nav" id="bottom-nav" aria-label="Main navigation"></nav>
+            </div>
+          </div>
+          <div class="stage-caption"><span class="caption-spark">✳</span><span>Built for the long days and the short windows between.</span></div>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
